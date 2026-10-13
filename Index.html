@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/bulanbintanglogo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulan Bintang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="Bulan_Bintang.html">
+            <img src="Images/bulanbintanglogo.png" alt="Bulan Bintang Logo">
+        </a>
+        <h1>Bulan Bintang</h1>
+        <p>From the moon to the stars go away all fears.</p>
+    </header>
+    <nav>
+        <a href="Bulan_Bintang.html">Home</a>
+        <a href="Bulan_Bintang_About_Us.html">About Us</a>
+        <a href="Bulan_Bintang_Contact_Us.html">Contact Us</a>
+        <a href="Bulan_Bintang_Shop.html">Shop</a>
+    </nav>
+    <div class="container">
+        <h1>Welcome to Bulan Bintang</h1>
+        <p>Discover the wonders of the universe with Bulan Bintang. We offer a variety of products to explore the nightsky and beyond.</p>
+    </div>
+    <br>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2024 Collections...</h2>
+    <div class="image-container">
+        <img src="Images/img1.png" alt="img1" class="active">
+        <img src="Images/img2.png" alt="img2">
+        <img src="Images/img3.png" alt="img3">
+    </div>
+    <br>
+    <br>
+    <div class="box">
+        <img src="Images/hot.png" alt="hot" id="hot">
+        <div>
+            <a href="Men.html">
+            <img src="Images/sales1.png" alt="sales1" id="sale1">
+            <img src="Images/sales2.png" alt="sales2" id="sale2">
+            <img src="Images/sales3.png" alt="sales3" id="sale3">
+            </a>
+            <hr style="height: 2px; background-color: black;">
+            <h2 id="word1">Baju Melayu</h2>
+            <a href="Batik.html">
+            <img src="Images/batik1.png" alt="batik1" id="sale1">
+            <img src="Images/batik2.png" alt="batik2" id="sale2">
+            <img src="Images/batik3.png" alt="batik3" id="sale3">
+            </a>
+            <hr style="height: 2px; background-color: black;">
+            <h2 id="word2">Baju Batik</h2>
+            <a href="Sistersandkids.html">
+            <img src="Images/sk1.png" alt="sk1" id="sale1">
+            <img src="Images/sk2.png" alt="sk2" id="sale2">
+            <img src="Images/sk3.png" alt="sk3" id="sale3">
+            </a>
+            <hr style="height: 2px; background-color: black;">
+            <h2 id="word3">Sisters and Kids</h2>
+        </div>
+    </div>
+    <div class="review-section">
+        <h3>What Our Customers Are Saying</h3>
+        <div class="review">
+            <p><strong>Ahmad Fudhail:</strong> "The Baju Batik collection is absolutely stunning. The quality is top-notch, and the designs are unique. Highly recommended!"</p>
+        </div>
+        <div class="review">
+            <p><strong>Justin Bieber:</strong> "I purchased the Baju Melayu for a special event, and it exceeded my expectations. Excellent craftsmanship and attention to detail."</p>
+        </div>
+        <div class="review">
+            <p><strong>Kaklimah:</strong> "The Sisters and Kids collection is perfect for my family. The fabrics are comfortable, and the designs are adorable. Will definitely buy again."</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer>
+    <div class="footer-content">
+        <div class="logo-section">
+                <img src="Images/bb.png" alt="Logo">
+            <p>From the moon to the stars go away all fears.</p>
+        </div>
+        <div class="contact-section">
+            <h3>Customer Services</h3>
+            <p>Email: operations@bulanbintanghq.com</p>
+            <p>Phone: +60 19790 9043</p>
+            <p>Monday - Saturday (9:00 am - 10:00pm)</p>
+        </div>
+        <div class="social-media-section">
+            <h3>Follow Us</h3>
+            <div class="social-buttons">
+                <a href="https://www.tiktok.com/@bulanbintangofficial" class="social-btn">Tiktok</a>
+                <a href="https://x.com/bulanbintanghq" class="social-btn">Twitter</a>
+                <a href="https://www.instagram.com/bulanbintanghq/" class="social-btn">Instagram</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Bulan Bintang HQ</p>
+        <div class="footer-buttons">
+            <a href="Bulan_Bintang_About_Us.html" class="footer-btn">About Us</a>
+            <a href="Bulan_Bintang_Contact_Us.html" class="footer-btn">Contact Us</a>
+            <a href="Bulan_Bintang_Shop.html" class="footer-btn">Shop</a>
+        </div>
+    </div>
+    </footer>
+    <script>
+        let images = document.querySelectorAll('.image-container img');
+        let currentIndex = 0;
+
+        function showNextImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+        }
+
+        setInterval(showNextImage, 3000);
+    </script>
+</body>
+
+</html>

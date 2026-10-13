@@ -1,0 +1,626 @@
+body {
+    font-family: Moderustic, sans-serif;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url('images/fab.jpg');
+    background-repeat: repeat;
+}
+
+header {
+    background-color: #005A87;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: left;
+}
+
+header p {
+    margin-left: 500px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 45px;
+    margin-left: 500px;
+}
+
+header img {
+    position: absolute;
+    top: 10px;
+    left: 370px;
+    width: 160px;
+    height: auto;
+}
+
+nav {
+    background-color: #00466A;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: yellow;
+    color: #005A87;
+}
+
+.fullscreen-image {
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    height: auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    border: 5px solid black; 
+    outline-offset: 10px;
+}
+
+.image-container img.active {
+    opacity: 1;
+    position: relative;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.container h1 {
+    color: #005A87;
+}
+
+.container p {
+    color: #333333;
+}
+
+.box {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1111px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px;
+    position: relative;
+    border: 2px solid #CCC;
+    border-radius: 8px;
+    background-color: #F9F9F9;
+
+}
+
+.box img {
+    inline-size: 305px;
+    position: relative;
+    margin-left: 5px;
+}
+
+.box img:not(#hot) {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.box img:not(#hot):hover {
+    transform: scale(1.05);
+    filter: blur(4px);
+}
+
+#hot {
+    left: -60px;
+    bottom: 50px; 
+    width: 150px;
+    height: auto;
+}
+
+#sale1 {
+    bottom: 0px;
+    left: 0px;
+}
+
+#sale2 {
+    bottom: 0px;
+    left: 85px;
+}
+
+#sale3 {
+    bottom: 0px;
+    left: 170px;
+}
+
+#word1 {
+    position: relative;
+    bottom: 380px;
+}
+
+#word2 {
+    position: relative;
+    bottom: 380px;
+}
+
+#word3 {
+    position: relative;
+    bottom: 380px;
+}
+
+.box h1 {
+    text-align: center;
+}
+
+.box p {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.button-container {
+    display: flex;
+    margin-left: 450px;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #00466A;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #00466A;
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.review-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.review-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.review {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.review p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.company-history, .mission-vision, .team, .testimonials {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.company-history ul, .mission-vision p, .team-member p, .testimonials blockquote {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.company-history h2, .mission-vision h2, .team h2, .testimonials h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+.testimonials blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 15px;
+    margin: 10px 0;
+}
+
+.contact-form, .contact-info, .social-media, .map {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.contact-form h2, .contact-info h2, .social-media h2, .map h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-info p, .social-media a {
+    margin: 0;
+    font-size: 1em;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+.map-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.map-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.location img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.location div {
+    max-width: calc(100% - 320px);
+}
+
+.location h2 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.location p {
+    font-size: 18px;
+    margin: 8px;
+    margin-bottom: 10px;
+}
+
+.main-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.main-section.reverse {
+    grid-template-columns: 2fr 1fr;
+}
+
+.main-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.sub-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-item h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-weight: bold;
+    font-size: 1.01rem;
+    margin-bottom: 5px;
+}
+
+.product-item button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.product-item button:hover {
+    background-color: #444;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 600px; 
+}
+
+.team-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-info {
+    text-align: left;
+}
+
+.secondary-nav {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.secondary-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.secondary-nav a:hover {
+    color: #ffffff;
+    background-color: #cccccc;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    margin-bottom: 20px;
+    font-family: 'Moderustic', sans-serif;
+    font-size: 24px;
+}
+
+.footer-content p, .footer-content ul {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+}
+
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content ul li a:hover {
+    color: #ffcc00;
+}
+
+.logo-section h3 {
+    margin-top: 0;
+}
+
+.social-media-section {
+    margin-top: -30px;
+    margin-right: 70px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-btn {
+    background-color: #00466A;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+.social-btn:hover {
+    background-color: #fff;
+    color: #00466A;
+}
+
+.logo-section img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.contact-section {
+    margin-right: 130px;
+}
+
+.footer-bottom {
+    border-top: 3px solid #444;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-btn {
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
